@@ -1,0 +1,27 @@
+<HTML>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<!-- for external css from file same line as above href includes the path where file is stored -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<Title>Welcome to Flask</Title>
+</head>
+<body>
+	<div class="wrapper">
+	<div class="container-fluid" style="padding:10px;">
+	<h1>HIIIIIIIIIIIII U Cann DO iTTTTTT!!!!!</h1>
+	{% for place,value in data.items() %}
+	<div class="panel panel-default" style="color:skyblue">
+	<div class="panel-body">
+	<h3>Place : {{ place }}</h3>
+	<h3>Price : {{ value }}</h3>
+	<button class="btn btn-success">Click Me!!</button>
+	</div>
+	</div>
+	{% endfor %}
+	</div>
+	<div class="panel">
+	<h2>{{market}}</h2>
+	</div>
+</body>
+</HTML>
