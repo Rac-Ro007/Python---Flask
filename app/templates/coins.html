@@ -9,15 +9,36 @@
 <body>
 	<div class="wrapper">
 	<div class="container-fluid" style="padding:10px;margin:auto;">
-	<h1>HIIIIIIIIIIIII U Cann DO iTTTTTT!!!!!</h1>
+	<h1 align="center">Lets Know about CryptoCoins</h1>
+	<div class="col-md-1">
+	</div>
+	<div class="col-md-10">
+	<table class="table table-hover table-bordered">
+	<tr>
+	<!-- <h3>Coins : jinga i["name"]  jinga i["symbol"] </h3> -->
+	<th>Name</th>
+	<th>Symbolics</th>
+	<th>Price</th>
+	<th>Rankc</th>
+	</tr>
 	{% for i in data %}
-	<div class="panel panel-default" style="color:skyblue">
-	<div class="panel-body">
-	<h3>Coins : {{ i["name"],i["symbol"] }}</h3>
-	<button class="btn btn-success">Click Me!!</button>
-	</div>
-	</div>
+	<tr><td>
+	<h4>{{ i["name"]}}</h4>
+	</td>
+	<td>
+	<h4>{{ i["symbol"]}}</h4>
+	</td>
+	<td>
+	<h4>{{ i["price_usd"]}}</h4>
+	</td>
+	<td>
+	<h4>{{ i["rank"]}}</h4>
+	</td></tr>
 	{% endfor %}
+	</table>
+	</div>
+	<div class="col-md-1">
+	</div>
 	</div>
 	</div>
 </body>
