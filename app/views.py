@@ -11,4 +11,4 @@ def index():
 
 @app.route('/coins',methods=['GET'])
 def coin_list():
-	return render_template("coins.html",data = process_data.coins())
+	return render_template("coins.html",data = process_data.process_coins())

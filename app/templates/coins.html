@@ -4,7 +4,7 @@
 <!-- for external css from file same line as above href includes the path where file is stored -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<Title>Welcome to Flask</Title>
+<Title>Its abt Cryto -COins</Title>
 </head>
 <body>
 	<div class="wrapper">
@@ -19,7 +19,9 @@
 	<th>Name</th>
 	<th>Symbolics</th>
 	<th>Price</th>
-	<th>Rankc</th>
+	<th>% change(Hr)</th>
+	<th>Over 40</th>	
+	<th>Rank</th>
 	</tr>
 	{% for i in data %}
 	<tr><td>
@@ -30,6 +32,12 @@
 	</td>
 	<td>
 	<h4>{{ i["price_usd"]}}</h4>
+	</td>
+	<td>
+	<h4>{{ i["percent_change_1h"]}}</h4>
+	</td>
+	<td>
+	<h4>{{ i["over40usd"]}}</h4>
 	</td>
 	<td>
 	<h4>{{ i["rank"]}}</h4>
